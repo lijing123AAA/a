@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>五子连珠</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+		
+		<script type="text/javascript">
+		$(document).ready(function($){
+
+			$(".btn1").click(function(event){
+				$(".hint").css({"display":"block"});
+			});
+	
+			$(".hint-in3").click(function(event) {
+				$(".hint").css({"display":"none"});
+			});
+
+			$(".btn2").click(function(event) {
+				$(".hintl").css({"display":"block"});
+			});
+	
+	
+			$(".hintl-in3").click(function(event) {
+				$(".hintl").css({"display":"none"});
+			});
+		});
+		</script>		
+	</head>
+	<body  background="img/beijing.jpg">
+		
+		<p>五子连珠</p>
+		
+		<button class="btn">
+		<a href="index1.html" style="text-decoration: none; color: #FFFFFF;">开始游戏</a>
+		</button>
+		
+		<button class="btn1">游戏简介</button>
+		<button class="btn2">游戏玩法</button>
+		
+		<div class="hint">
+			<div class="hint-in1">
+				<div class="hint1"></div>
+				<div class="hint2">游戏简介</div>
+				<div class="hint3"></div>
+			</div>
+			<div class="hint-in2">&nbsp;&nbsp;&nbsp;&nbsp;开始游戏后棋盘上会随机出现三个随机颜色的彩珠，玩家可以点击彩珠对其进行移动，当同一颜色的珠子横、竖、左斜、右斜达到5个或5个以上时，可以对其相消增加得分。</div>
+			<div class="hint-in3">确定</div>
+		</div>
+		
+		<div class="hintl">
+			<div class="hintl-in1">
+				<div class="hintl1"></div>
+				<div class="hintl2">游戏玩法</div>
+				<div class="hintl3"></div>
+			</div>
+			
+			<div class="hintl-in2">&nbsp;&nbsp;&nbsp;&nbsp;开始游戏后棋盘上会随机出现三个随机颜色的彩珠，玩家可以点击彩珠对其进行移动，当同一颜色的珠子横、竖、左斜、右斜达到5个或5个以上时，可以对其相消增加得分。</div>
+			<div class="hintl-in3">确定</div>
+		</div>
+		
+	</body>
+</html>
